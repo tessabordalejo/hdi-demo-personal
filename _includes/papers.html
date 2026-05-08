@@ -1,0 +1,49 @@
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>News and Events</h2>
+      <p>Follow the latest news, events, publications, and project updates from HDI.</p>
+    </div>
+
+    <div class="cards">
+
+      {% for post in site.posts limit:3 %}
+        <article class="card">
+
+          {% if post.image %}
+            <div class="card__thumb">
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+            </div>
+          {% endif %}
+
+          <div class="card__body">
+            <div class="card__meta">
+              <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+
+              {% if post.category %}
+                <span class="card__tag">{{ post.category }}</span>
+              {% elsif post.categories and post.categories.size > 0 %}
+                <span class="card__tag">{{ post.categories[0] }}</span>
+              {% endif %}
+            </div>
+
+            <h3 class="card__title">{{ post.title }}</h3>
+
+            {% if post.excerpt %}
+              <p class="card__excerpt">
+                {{ post.excerpt | strip_html | truncate: 150 }}
+              </p>
+            {% endif %}
+
+            <a href="{{ post.url | relative_url }}" class="card__link">Read More →</a>
+          </div>
+        </article>
+      {% endfor %}
+
+    </div>
+
+    <div class="view-all-row">
+      <a href="{{ '/updates/' | relative_url }}" class="btn btn--ghost">View All Updates</a>
+    </div>
+  </div>
+</section>
