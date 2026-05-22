@@ -1424,3 +1424,7 @@ p:last-child {
     min-height: 0;
   }
 }
+
+.connect-feature__panel p {
+  text-align: center;
+}
