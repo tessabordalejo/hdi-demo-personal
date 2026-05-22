@@ -1,8 +1,7 @@
-<section class="section">
+<section class="section" style="padding-bottom: 5rem; position: relative;">
   <div class="wrap">
 
     <div style="display: grid; grid-template-columns: 1fr 400px; gap: 56px; align-items: center;">
-
       <div>
         <h2 style="margin-bottom: 1.5rem;">Research Program</h2>
         <p style="text-align: left; color: var(--text);">
@@ -18,29 +17,26 @@
           long-term stewardship of research and cultural heritage infrastructure.
         </p>
       </div>
-
       <img
         src="https://www.ulethbridge.ca/notice/sites/notice/files/Postdoctalk-717.jpg"
         alt="University of Lethbridge campus"
         style="width: 100%; height: 320px; object-fit: cover; display: block;"
       >
-
     </div>
 
-    <!-- Banner box -->
+    <!-- Overlapping banner -->
     <div style="
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0;
       margin-top: 3rem;
       border: 1px solid var(--border);
+      position: relative;
+      z-index: 10;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+      transform: translateY(50%);
     ">
-      <div style="
-        padding: 2.5rem;
-        background: var(--bg-alt);
-        border-right: 1px solid var(--border);
-      ">
-        <p style="text-align: left; color: var(--text); margin-bottom: 0;">
+      <div style="padding: 2.5rem; background: #e8f0f7; border-right: 1px solid var(--border);">
+        <p style="text-align: left; color: var(--text); margin-bottom: 0; line-height: 1.75;">
           Research includes comparative fieldwork across universities and GLAM organizations
           (Galleries, Libraries, Archives, and Museums) in Canada and the United States,
           alongside research consultations with humanities scholars, archivists, librarians,
@@ -48,13 +44,10 @@
           cultural heritage settings.
         </p>
       </div>
-      <div style="
-        padding: 2.5rem;
-        background: var(--primary);
-      ">
+      <div style="padding: 2.5rem; background: #d6e6f2;">
         <p style="
           text-align: left;
-          color: rgba(255,255,255,0.7);
+          color: #4a6a80;
           font-size: 0.78rem;
           font-weight: 500;
           letter-spacing: 0.08em;
@@ -62,12 +55,36 @@
           margin-bottom: 1rem;
         ">This work contributes to scholarly dialogue on</p>
         <ul style="list-style: none; padding: 0; margin: 0;">
-          <li style="color: rgba(255,255,255,0.85); padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.95rem;">Humanities research practices and data cultures</li>
-          <li style="color: rgba(255,255,255,0.85); padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.95rem;">Digital cultural heritage infrastructure</li>
-          <li style="color: rgba(255,255,255,0.85); padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.95rem;">Governance, stewardship, and sustainability of digital collections</li>
-          <li style="color: rgba(255,255,255,0.85); padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.95rem;">Research data management and policy</li>
-          <li style="color: rgba(255,255,255,0.85); padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.95rem;">Cultural data ethics and community authority</li>
-          <li style="color: rgba(255,255,255,0.85); padding: 0.5rem 0; font-size: 0.95rem;">Digital transformation of the human cultural record</li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(74,106,128,0.2); font-size: 0.95rem; color: #2a4a5e; transition: color 0.2s, padding-left 0.2s; cursor: default;"
+            onmouseover="this.style.color='#b9915d'; this.style.paddingLeft='0.5rem';"
+            onmouseout="this.style.color='#2a4a5e'; this.style.paddingLeft='0';">
+            Humanities research practices and data cultures
+          </li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(74,106,128,0.2); font-size: 0.95rem; color: #2a4a5e; transition: color 0.2s, padding-left 0.2s; cursor: default;"
+            onmouseover="this.style.color='#b9915d'; this.style.paddingLeft='0.5rem';"
+            onmouseout="this.style.color='#2a4a5e'; this.style.paddingLeft='0';">
+            Digital cultural heritage infrastructure
+          </li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(74,106,128,0.2); font-size: 0.95rem; color: #2a4a5e; transition: color 0.2s, padding-left 0.2s; cursor: default;"
+            onmouseover="this.style.color='#b9915d'; this.style.paddingLeft='0.5rem';"
+            onmouseout="this.style.color='#2a4a5e'; this.style.paddingLeft='0';">
+            Governance, stewardship, and sustainability of digital collections
+          </li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(74,106,128,0.2); font-size: 0.95rem; color: #2a4a5e; transition: color 0.2s, padding-left 0.2s; cursor: default;"
+            onmouseover="this.style.color='#b9915d'; this.style.paddingLeft='0.5rem';"
+            onmouseout="this.style.color='#2a4a5e'; this.style.paddingLeft='0';">
+            Research data management and policy
+          </li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(74,106,128,0.2); font-size: 0.95rem; color: #2a4a5e; transition: color 0.2s, padding-left 0.2s; cursor: default;"
+            onmouseover="this.style.color='#b9915d'; this.style.paddingLeft='0.5rem';"
+            onmouseout="this.style.color='#2a4a5e'; this.style.paddingLeft='0';">
+            Cultural data ethics and community authority
+          </li>
+          <li style="padding: 0.5rem 0; font-size: 0.95rem; color: #2a4a5e; transition: color 0.2s, padding-left 0.2s; cursor: default;"
+            onmouseover="this.style.color='#b9915d'; this.style.paddingLeft='0.5rem';"
+            onmouseout="this.style.color='#2a4a5e'; this.style.paddingLeft='0';">
+            Digital transformation of the human cultural record
+          </li>
         </ul>
       </div>
     </div>
