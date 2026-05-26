@@ -1452,3 +1452,151 @@ p:last-child {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
+/* ============================================================
+   RESEARCH PROGRAM
+   ============================================================ */
+
+.research-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 56px;
+  align-items: center;
+}
+
+.research-grid h2 {
+  margin-bottom: 1.5rem;
+}
+
+.research-grid p {
+  text-align: left;
+}
+
+.research-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.research-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2.5rem;
+  border: 1px solid var(--border);
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+}
+
+.research-banner__left {
+  padding: 2rem 2.5rem;
+  background: #e8f0f7;
+  border-right: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+}
+
+.research-banner__left p {
+  text-align: left;
+  margin-bottom: 0;
+  line-height: 1.75;
+  font-size: 0.92rem;
+}
+
+.research-banner__right {
+  padding: 2rem 2.5rem;
+  background: #d6e6f2;
+}
+
+.research-banner__label {
+  text-align: left;
+  color: #4a6a80;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.research-banner__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.research-banner__list li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid rgba(74,106,128,0.2);
+  font-size: 0.88rem;
+  color: #2a4a5e;
+  transition: color 0.2s, padding-left 0.2s;
+  cursor: default;
+}
+
+.research-banner__list li:last-child {
+  border-bottom: none;
+}
+
+.research-banner__list li:hover {
+  color: var(--accent);
+  padding-left: 0.5rem;
+}
+
+/* ============================================================
+   PROGRAM AREAS
+   ============================================================ */
+
+.section--program-areas {
+  margin-top: -3.5rem;
+  padding-top: 7rem;
+}
+
+/* ============================================================
+   OUTPUTS & COLLABORATIONS
+   ============================================================ */
+
+.collab-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.collab-grid p {
+  text-align: left;
+}
+
+.outputs-label {
+  text-align: left;
+  color: var(--muted);
+  font-size: var(--label-size);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.outputs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.outputs-list li {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+  color: var(--text);
+  transition: color 0.2s, padding-left 0.2s;
+  cursor: default;
+}
+
+.outputs-list li:last-child {
+  border-bottom: none;
+}
+
+.outputs-list li:hover {
+  color: var(--accent);
+  padding-left: 0.5rem;
+}
