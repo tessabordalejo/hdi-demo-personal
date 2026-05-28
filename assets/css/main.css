@@ -485,7 +485,8 @@ p:last-child {
 }
 
 .split__media {
-  min-height: 520px;
+  height: 520px;
+  min-height: unset;
   overflow: hidden;
   background: var(--primary);
 }
