@@ -1537,10 +1537,6 @@ p:last-child {
   border-bottom: none;
 }
 
-.research-banner__list li:hover {
-  color: inherit;
-}
-
 /* ============================================================
    PROGRAM AREAS
    ============================================================ */
