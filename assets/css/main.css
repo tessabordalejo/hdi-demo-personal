@@ -1161,6 +1161,53 @@ p:last-child {
   margin-bottom: 2rem;
 }
 
+/* Contact page — single centered card, no image */
+.contact-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - var(--nav-h) - 8rem);
+  padding: 5rem 1.5rem;
+  background-color: var(--bg-alt);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)),
+    url('https://www.ulethbridge.ca/notice/sites/notice/files/Postdoctalk-717.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 4.25rem 3.75rem;
+  text-align: center;
+  background: var(--white);
+  border: 2px solid var(--primary);
+  box-shadow: var(--shadow);
+}
+
+.contact-card h2 {
+  color: var(--primary);
+  font-size: var(--h2-size);
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.contact-card p {
+  color: var(--text);
+  font-size: var(--body-size);
+  line-height: 1.75;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-card p a {
+  color: var(--logo-teal);
+  border-bottom: 1px solid var(--logo-teal);
+}
+
 /* ============================================================
    LAND ACKNOWLEDGEMENT
    ============================================================ */
