@@ -1522,7 +1522,7 @@ p:last-child {
   grid-template-columns: 1fr 1fr;
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
-  border: 1px solid rgba(0,0,0,0.14);
+  border: 1px solid #bedee2;
   position: relative;
   z-index: 10;
   box-shadow: 0 8px 32px rgba(0,0,0,0.10);
@@ -1531,7 +1531,7 @@ p:last-child {
 .research-banner__left {
   padding: 2rem 2.5rem;
   background: #a8d4d8;
-  border-right: 1px solid rgba(0,0,0,0.14);
+  border-right: 1px solid #bedee2;
   display: flex;
   align-items: center;
 }
