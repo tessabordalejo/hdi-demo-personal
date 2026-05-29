@@ -1799,6 +1799,7 @@ p:last-child {
 
 .page-legend__link:hover,
 .page-legend__link.is-active {
+  color: var(--legend-color);
   border-left-color: var(--legend-color);
   font-weight: 600;
 }
