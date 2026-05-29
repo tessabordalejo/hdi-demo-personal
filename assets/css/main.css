@@ -1757,7 +1757,6 @@ p:last-child {
   padding: 1.4rem 1.4rem 1.5rem;
   background: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
 
@@ -1801,9 +1800,6 @@ p:last-child {
 .page-legend__link:hover,
 .page-legend__link.is-active {
   border-left-color: var(--legend-color);
-}
-
-.page-legend__link.is-active {
   font-weight: 600;
 }
 
