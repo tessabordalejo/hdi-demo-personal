@@ -1350,6 +1350,10 @@ p:last-child {
     --h3-size: 1.9rem;
   }
 
+  .outputs-numbered {
+    columns: 1;
+  }
+
   .nav__logo {
     width: 46px;
     height: 46px;
@@ -1588,15 +1592,14 @@ p:last-child {
    OUTPUTS & COLLABORATIONS
    ============================================================ */
 
-.collab-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: start;
+.collab-intro {
+  max-width: 760px;
+  margin-bottom: 2.75rem;
 }
 
-.collab-grid p {
+.collab-intro p {
   text-align: justify;
+  margin-bottom: 0;
 }
 
 .outputs-label {
@@ -1606,27 +1609,47 @@ p:last-child {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 
-.outputs-list {
+/* Two-column numbered list with large teal index numbers.
+   CSS multicolumn flows items down each column (01-03 | 04-06). */
+.outputs-numbered {
   list-style: none;
   padding: 0;
-  margin: 0 0 2rem 0;
+  margin: 0 0 2.5rem 0;
+  columns: 2;
+  column-gap: 64px;
+  counter-reset: output;
 }
 
-.outputs-list li {
-  padding: 0.45rem 0;
-  border-bottom: 1px solid var(--muted);
-  font-size: 0.92rem;
+.outputs-numbered li {
+  break-inside: avoid;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.95rem;
+  line-height: 1.5;
   color: var(--text);
-  cursor: default;
+  counter-increment: output;
 }
 
-.outputs-list li:last-child {
-  border-bottom: none;
+.outputs-numbered li::before {
+  content: counter(output, decimal-leading-zero);
+  font-family: var(--font-head);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--logo-teal);
+  flex-shrink: 0;
+  min-width: 1.6rem;
 }
 
-.outputs-list li:hover {
-  color: inherit;
-}
+/* Each index number takes a different logo color, cycling the palette */
+.outputs-numbered li:nth-child(5n+1)::before { color: var(--logo-green); }
+.outputs-numbered li:nth-child(5n+2)::before { color: var(--logo-gold); }
+.outputs-numbered li:nth-child(5n+3)::before { color: var(--logo-purple); }
+.outputs-numbered li:nth-child(5n+4)::before { color: var(--logo-red); }
+.outputs-numbered li:nth-child(5n+5)::before { color: var(--logo-teal); }
