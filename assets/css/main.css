@@ -1171,7 +1171,7 @@ p:last-child {
   background-color: var(--bg-alt);
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28)),
-    url('https://www.ulethbridge.ca/notice/sites/notice/files/Postdoctalk-717.jpg');
+    url('/hdi-demo-personal/assets/img/intro.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
