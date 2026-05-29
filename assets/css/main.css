@@ -1183,7 +1183,7 @@ p:last-child {
   margin: 0 auto;
   padding: 4.25rem 3.75rem;
   text-align: center;
-  background: var(--white);
+  background: var(--bg-alt);
   border: 2px solid var(--primary);
   box-shadow: var(--shadow);
 }
