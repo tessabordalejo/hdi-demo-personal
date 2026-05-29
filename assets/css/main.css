@@ -1530,7 +1530,7 @@ p:last-child {
 
 .research-banner__left {
   padding: 2rem 2.5rem;
-  background: #d7e6d0;
+  background: #b3cfa6;
   border-right: 1px solid rgba(0,0,0,0.14);
   display: flex;
   align-items: center;
@@ -1545,12 +1545,12 @@ p:last-child {
 
 .research-banner__right {
   padding: 2rem 2.5rem;
-  background: #b3cfa6;
+  background: #3d8a2a;
 }
 
 .research-banner__label {
   text-align: left;
-  color: var(--logo-teal);
+  color: var(--logo-gold);
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -1566,7 +1566,7 @@ p:last-child {
 
 .research-banner__list li {
   padding: 0.35rem 0;
-  border-bottom: 1px solid rgba(48, 64, 74, 0.2);
+  border-bottom: 1px solid var(--logo-gold);
   font-size: 0.88rem;
   color: var(--primary);
   cursor: default;
