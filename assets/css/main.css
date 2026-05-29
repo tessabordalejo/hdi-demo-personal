@@ -1454,7 +1454,7 @@ p:last-child {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #4a6a80;
+  color: var(--muted);
 }
 
 .program-card h4 {
@@ -1532,7 +1532,7 @@ p:last-child {
 
 .research-banner__list li {
   padding: 0.35rem 0;
-  border-bottom: 1px solid rgba(74,106,128,0.2);
+  border-bottom: 1px solid rgba(48, 64, 74, 0.2);
   font-size: 0.88rem;
   color: var(--primary);
   cursor: default;
