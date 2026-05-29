@@ -1550,7 +1550,7 @@ p:last-child {
 
 .research-banner__label {
   text-align: left;
-  color: var(--muted);
+  color: var(--logo-teal);
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.08em;
