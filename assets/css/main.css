@@ -434,6 +434,14 @@ p:last-child {
   border-color: var(--logo-green);
 }
 
+/* Per-button hover colors drawn from the logo palette.
+   Listed after the default so the modifier wins (equal specificity). */
+.btn--green:hover  { background: var(--logo-green);  color: var(--white);   border-color: var(--logo-green); }
+.btn--purple:hover { background: var(--logo-purple); color: var(--white);   border-color: var(--logo-purple); }
+.btn--teal:hover   { background: var(--logo-teal);   color: var(--white);   border-color: var(--logo-teal); }
+.btn--red:hover    { background: var(--logo-red);    color: var(--white);   border-color: var(--logo-red); }
+.btn--gold:hover   { background: var(--logo-gold);   color: var(--white);   border-color: var(--logo-gold); }
+
 /* ============================================================
    IMAGE + TEXT SPLIT SECTIONS
    ============================================================ */
@@ -543,8 +551,16 @@ p:last-child {
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(0, 0, 0, 0.14);
+  border-left: 3px solid var(--logo-green);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+/* Each card carries a different logo color on its left edge */
+.card:nth-child(5n+1) { border-left-color: var(--logo-green); }
+.card:nth-child(5n+2) { border-left-color: var(--logo-gold); }
+.card:nth-child(5n+3) { border-left-color: var(--logo-purple); }
+.card:nth-child(5n+4) { border-left-color: var(--logo-teal); }
+.card:nth-child(5n+5) { border-left-color: var(--logo-red); }
 
 .card:hover {
   transform: translateY(-3px);
@@ -581,7 +597,7 @@ p:last-child {
 }
 
 .card__tag {
-  color: var(--primary);
+  color: var(--logo-teal);
 }
 
 .card__title {
@@ -610,10 +626,12 @@ p:last-child {
   border-bottom: 1px solid var(--primary);
   padding-bottom: 2px;
   align-self: flex-start;
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .card__link:hover {
-  border-bottom-color: var(--primary);
+  color: var(--logo-green);
+  border-bottom-color: var(--logo-green);
 }
 
 .view-all-row {
