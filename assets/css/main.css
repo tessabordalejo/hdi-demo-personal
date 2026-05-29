@@ -1530,7 +1530,7 @@ p:last-child {
 
 .research-banner__left {
   padding: 2rem 2.5rem;
-  background: #f0e2a5;
+  background: #a8d4d8;
   border-right: 1px solid rgba(0,0,0,0.14);
   display: flex;
   align-items: center;
@@ -1545,7 +1545,7 @@ p:last-child {
 
 .research-banner__right {
   padding: 2rem 2.5rem;
-  background: #a8d4d8;
+  background: var(--bg-alt);
 }
 
 .research-banner__label {
