@@ -1161,6 +1161,11 @@ p:last-child {
   margin-bottom: 2rem;
 }
 
+.connect-feature__panel p a {
+  color: var(--logo-teal);
+  border-bottom: 1px solid var(--logo-teal);
+}
+
 /* Contact page — single centered card, no image */
 .contact-page {
   display: flex;
