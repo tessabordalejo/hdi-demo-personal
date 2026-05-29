@@ -1564,6 +1564,7 @@ p:last-child {
 
 .collab-grid p {
   text-align: justify;
+  align-items: center;
 }
 
 .outputs-label {
@@ -1584,7 +1585,7 @@ p:last-child {
 
 .outputs-list li {
   padding: 0.45rem 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--muted);
   font-size: 0.92rem;
   color: var(--text);
   cursor: default;
