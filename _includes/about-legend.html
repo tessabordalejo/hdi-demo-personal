@@ -9,7 +9,7 @@
 </nav>
 
 <script>
-  (function () {
+  document.addEventListener('DOMContentLoaded', function () {
     var links = document.querySelectorAll('.page-legend__link');
     if (!links.length || !('IntersectionObserver' in window)) return;
 
@@ -31,5 +31,5 @@
       var section = document.getElementById(id);
       if (section) observer.observe(section);
     });
-  })();
+  });
 </script>
