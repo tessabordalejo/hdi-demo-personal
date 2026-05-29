@@ -34,7 +34,11 @@
               </p>
             {% endif %}
 
-            <a href="{{ post.url | relative_url }}" class="card__link">Read More →</a>
+            {% if post.external_url %}
+              <a href="{{ post.external_url }}" class="card__link" target="_blank" rel="noopener">View on Zenodo →</a>
+            {% else %}
+              <a href="{{ post.url | relative_url }}" class="card__link">Read More →</a>
+            {% endif %}
           </div>
         </article>
       {% endfor %}

@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Representational Data:  A Case Study"
+date: 2023-05-30 12:00:00 +0000
+category: "Presentation"
+authors: "O'donnell; Bordalejo; Woods"
+external_url: "https://zenodo.org/records/7986430"
+---
+
+This is a quick entry to be edited in a minute

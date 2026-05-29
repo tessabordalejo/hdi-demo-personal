@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Small Data projects/Big Data research: contemporary problems and historical solutions"
+date: 2022-07-18 12:00:00 +0000
+category: "Presentation"
+authors: "O'Donnell, Daniel; Bordalejo, Barbara; Woods, Nathan; Rosselli Del Turco, Roberto"
+external_url: "https://zenodo.org/records/6917218"
+---
+
+The live version of presentation with transcript and slides. Has a few minor changes.

@@ -8,9 +8,9 @@
   <div class="section__inner">
     <div class="card-grid">
 
-      {% for post in site.posts limit:3 %}
+      {% for post in site.posts %}
         <article class="card">
-          <a href="{{ post.url | relative_url }}" class="card__link-wrap">
+          <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}" class="card__link-wrap"{% if post.external_url %} target="_blank" rel="noopener"{% endif %}>
 
             {% if post.image %}
               <div class="card__thumb">
@@ -31,16 +31,73 @@
 
               <h3 class="card__title">{{ post.title }}</h3>
 
+              {% if post.authors %}
+                <p class="card__authors">{{ post.authors }}</p>
+              {% endif %}
+
               {% if post.excerpt %}
                 <p class="card__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
               {% endif %}
 
-              <span class="card__read-more">Read More →</span>
+              <span class="card__read-more">
+                {% if post.external_url %}View on Zenodo →{% else %}Read More →{% endif %}
+              </span>
             </div>
           </a>
         </article>
       {% endfor %}
 
     </div>
+
+    <nav class="pagination" aria-label="Outputs pages"></nav>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var grid = document.querySelector('.card-grid');
+    var pager = document.querySelector('.pagination');
+    if (!grid || !pager) return;
+
+    var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+    var perPage = 6;
+    var pages = Math.ceil(cards.length / perPage);
+    if (pages <= 1) { pager.style.display = 'none'; return; }
+
+    var current = 1;
+
+    function show(page) {
+      current = page;
+      cards.forEach(function (card, i) {
+        var cardPage = Math.floor(i / perPage) + 1;
+        card.style.display = (cardPage === page) ? '' : 'none';
+      });
+      render();
+      var section = document.querySelector('.cards-section');
+      if (section) {
+        window.scrollTo({ top: section.offsetTop - 100, behavior: 'smooth' });
+      }
+    }
+
+    function makeButton(label, page, disabled, active) {
+      var b = document.createElement('button');
+      b.className = 'pagination__btn';
+      b.textContent = label;
+      if (active) b.classList.add('is-active');
+      if (disabled) { b.disabled = true; }
+      else { b.addEventListener('click', function () { show(page); }); }
+      return b;
+    }
+
+    function render() {
+      pager.innerHTML = '';
+      pager.appendChild(makeButton('‹', current - 1, current === 1, false));
+      for (var i = 1; i <= pages; i++) {
+        pager.appendChild(makeButton(String(i), i, false, i === current));
+      }
+      pager.appendChild(makeButton('›', current + 1, current === pages, false));
+    }
+
+    show(1);
+  });
+</script>
