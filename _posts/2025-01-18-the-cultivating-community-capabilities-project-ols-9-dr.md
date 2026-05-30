@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "THE CULTIVATING COMMUNITY CAPABILITIES PROJECT [OLS-9 DRI-EDIA Champions cohort graduation presentation]"
+title: "The Cultivating Community Capabilities Project [OLS-9 DRI-EDIA Champions Cohort Graduation Presentation]"
 date: 2025-01-18 12:00:00 +0000
 category: "Presentation"
 authors: "Nathan Woods"

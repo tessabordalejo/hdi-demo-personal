@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Publishing open humanities data: the experience of  the Journal of Open Humanities Data"
+title: "Publishing open humanities data: the experience of the Journal of Open Humanities Data"
 date: 2022-07-13 12:00:00 +0000
 category: "Presentation"
 authors: "Barbara McGillivray"
