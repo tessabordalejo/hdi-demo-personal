@@ -3,10 +3,10 @@ email: nathan.woods@uleth.ca
 description: >-
   Website of the Humanities Data Inquiry Project, hosted by the University of Lethbridge Humanities Innovation Lab.
 
-baseurl: "/hdi-demo"
-url: "https://jocelyn-mcknight.github.io"
+baseurl: "/hdi-demo-personal"
+url: "https://tessabordalejo.github.io"
 
-github_username: Jocelyn-McKnight
+github_username: tessabordalejo
 
 plugins:
   - jekyll-feed
