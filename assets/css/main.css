@@ -1062,6 +1062,7 @@ p:last-child {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
   gap: 1.75rem;
 }
 
@@ -1083,6 +1084,8 @@ p:last-child {
 
 .card-grid .card__body {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem 1.7rem;
 }
 
