@@ -1618,35 +1618,6 @@ p:last-child {
     columns: 1;
   }
 
-  .funding-item {
-    grid-template-columns: 1fr;
-    gap: 0.85rem;
-  }
-
-  .funder-logos__list {
-    gap: 2.25rem;
-  }
-
-  /* SSHRC mark is allowed to scale down to fit the viewport */
-  .funder-logo__img {
-    height: auto;
-    width: 100%;
-    max-width: 320px;
-  }
-
-  /* Alliance brand rule: keep the logo at the 50px digital minimum.
-     It is wide (~8:1), so let it scroll horizontally within its box
-     instead of shrinking below the minimum height. */
-  .funder-logo {
-    overflow-x: auto;
-  }
-
-  .funder-logo__img--alliance {
-    height: 50px;
-    width: auto;
-    max-width: none;
-  }
-
   .nav__logo {
     width: 46px;
     height: 46px;
@@ -2194,6 +2165,79 @@ p:last-child {
 .funder-logo__ack a {
   color: inherit;
   text-decoration: underline;
+}
+
+/* Mobile overrides for funding + members.
+   NOTE: these must live AFTER the base rules above — equal-specificity
+   media-query rules placed earlier in the file lose on source order. */
+@media (max-width: 768px) {
+  /* Justified text leaves ugly gaps in a narrow column */
+  .funding-intro p {
+    text-align: left;
+  }
+
+  /* Stack the grant: amount, then years, then the grant info — no columns */
+  .funding-item {
+    display: block;
+    padding: 1.5rem 0;
+  }
+
+  .funding-item__stat {
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .funding-item__amount {
+    font-size: 1.45rem;
+  }
+
+  .funding-item__title {
+    font-size: 1.3rem;
+  }
+
+  /* Never let a long title or grant number push the layout sideways */
+  .funding-item__title,
+  .funding-item__grant {
+    overflow-wrap: anywhere;
+  }
+
+  .funder-logos {
+    margin-top: 2.5rem;
+  }
+
+  .funder-logos__list {
+    gap: 2.5rem;
+  }
+
+  .funder-logo {
+    max-width: 100%;
+  }
+
+  /* SSHRC mark scales down to fit the viewport */
+  .funder-logo__img {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Alliance brand rule: hold the 50px digital minimum height. The mark is
+     wide (~8:1), so let it scroll horizontally within its own box rather
+     than shrink below the minimum. */
+  .funder-logo--alliance {
+    overflow-x: auto;
+  }
+
+  .funder-logo__img--alliance {
+    height: 50px;
+    width: auto;
+    max-width: none;
+  }
+
+  /* Members: single column of larger circles on the narrowest screens */
+  .member-grid {
+    gap: 2rem 1.25rem;
+  }
 }
 
 /* ============================================================
