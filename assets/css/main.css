@@ -635,6 +635,17 @@ p:last-child {
   border-bottom-color: var(--logo-green);
 }
 
+/* Home output cards: pin the link to the bottom, like the outputs page */
+.cards .card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards .card__link {
+  margin-top: auto;
+}
+
 .view-all-row {
   display: flex;
   justify-content: center;
