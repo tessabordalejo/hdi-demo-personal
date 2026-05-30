@@ -1975,12 +1975,17 @@ p:last-child {
   list-style: none;
   padding: 0;
   margin: 0 0 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 2.5rem 1.5rem;
+  /* Centered flex so each group (3 leads, 5 team, 1 past) reads as an
+     intentional, balanced row rather than a ragged grid */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem 2rem;
 }
 
 .member {
+  flex: 0 0 auto;
+  width: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2259,9 +2264,14 @@ p:last-child {
     max-width: none;
   }
 
-  /* Members: single column of larger circles on the narrowest screens */
+  /* Members: two per row on phones */
   .member-grid {
     gap: 2rem 1.25rem;
+  }
+
+  .member {
+    width: 44%;
+    max-width: 180px;
   }
 }
 
