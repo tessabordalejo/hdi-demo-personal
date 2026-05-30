@@ -2,7 +2,7 @@
 layout: post
 title: "The Humanities Innovation Lab (HIL) Whiteboards"
 date: 2019-09-01 12:00:00 +0000
-category: "Physical Object"
+category: "Other"
 authors: "Humanities Innovation Lab (HIL)"
 external_url: "https://zenodo.org/records/7319959"
 ---
