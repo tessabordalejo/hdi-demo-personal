@@ -7,4 +7,4 @@ authors: "Daniel O'Donnell, Barbara Bordalejo, Nathan Woods"
 external_url: "https://zenodo.org/records/7986430"
 ---
 
-This is a quick entry to be edited in a minute
+A case study examining representational data in the humanities.

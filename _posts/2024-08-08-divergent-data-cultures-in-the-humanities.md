@@ -7,4 +7,4 @@ authors: "Nathan Woods, Barbara Bordalejo, Daniel O'Donnell"
 external_url: "https://zenodo.org/records/13273316"
 ---
 
-A talk given at the DH2024, George Mason University, Arlington Virginia, August 08th, 2024
+A talk given at DH 2024, George Mason University, Arlington, Virginia, August 8, 2024.

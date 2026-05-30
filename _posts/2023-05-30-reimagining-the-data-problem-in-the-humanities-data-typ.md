@@ -7,4 +7,4 @@ authors: "Nathan Woods, Barbara Bordalejo, Daniel O'Donnell"
 external_url: "https://zenodo.org/records/7986436"
 ---
 
-Paper presented at Congress CSDH/SCHN 2023, in Toronto, Canada, May 28th-30th, 2023.
+Paper presented at Congress CSDH/SCHN 2023 in Toronto, Canada, May 28–30, 2023.

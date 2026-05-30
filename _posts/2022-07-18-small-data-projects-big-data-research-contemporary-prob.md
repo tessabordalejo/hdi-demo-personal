@@ -7,4 +7,4 @@ authors: "Daniel O'Donnell, Barbara Bordalejo, Nathan Woods, Roberto Rosselli de
 external_url: "https://zenodo.org/records/6917218"
 ---
 
-The live version of presentation with transcript and slides. Has a few minor changes.
+The live version of the presentation, with transcript and slides. Includes a few minor changes.

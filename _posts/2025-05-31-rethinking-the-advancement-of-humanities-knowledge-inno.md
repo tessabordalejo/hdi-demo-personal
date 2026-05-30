@@ -7,4 +7,4 @@ authors: "Nathan Woods, Davide Pafumi, Barbara Bordalejo, Daniel O'Donnell"
 external_url: "https://zenodo.org/records/20174887"
 ---
 
-Paper presented at CSDH/SCHN Annual Conference Congress 2025 George Brown College Toronto, Ontario May 31, 2025
+Paper presented at the CSDH/SCHN Annual Conference, Congress 2025, George Brown College, Toronto, Ontario, May 31, 2025.

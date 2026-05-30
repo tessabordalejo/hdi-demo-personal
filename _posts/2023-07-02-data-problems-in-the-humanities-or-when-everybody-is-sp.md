@@ -7,4 +7,4 @@ authors: "Nathan Woods, Barbara Bordalejo, Daniel O'Donnell"
 external_url: "https://zenodo.org/records/8106427"
 ---
 
-Paper presented at DH2023, Graz, Austria
+Paper presented at DH 2023 in Graz, Austria.

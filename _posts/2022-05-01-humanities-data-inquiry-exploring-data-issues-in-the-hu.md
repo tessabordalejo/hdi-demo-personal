@@ -7,4 +7,4 @@ authors: "Nathan Woods"
 external_url: "https://zenodo.org/records/6547505"
 ---
 
-This is an information sheet for the Humanities Data Inquiry. It is designed to facilitate stakeholder enrollment in the community of practice as well as provide further information for poster, lightening talks and short presentation sessions.
+This is an information sheet for the Humanities Data Inquiry. It is designed to facilitate stakeholder enrollment in the community of practice as well as provide further information for poster, lightning talks, and short presentation sessions.

@@ -7,4 +7,4 @@ authors: "Barbara Bordalejo, Daniel O'Donnell, Nathan Woods"
 external_url: "https://zenodo.org/records/8411165"
 ---
 
-Slides from talk
+Slides from the talk.

@@ -7,4 +7,4 @@ authors: "Nathan Woods, Barbara Bordalejo, Daniel O'Donnell"
 external_url: "https://zenodo.org/records/8403789"
 ---
 
-Long abstract for DH 2023, peer reviewed.
+Long abstract for DH 2023, peer-reviewed.
