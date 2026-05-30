@@ -2048,10 +2048,9 @@ p:last-child {
 }
 
 /* Each legend entry carries its own logo color */
-.page-legend__list li:nth-child(1) { --legend-color: var(--logo-green); }
-.page-legend__list li:nth-child(2) { --legend-color: var(--logo-gold); }
-.page-legend__list li:nth-child(3) { --legend-color: var(--logo-purple); }
-.page-legend__list li:nth-child(4) { --legend-color: var(--logo-red); }
+.page-legend__list li:nth-child(1) { --legend-color: var(--logo-gold); }
+.page-legend__list li:nth-child(2) { --legend-color: var(--logo-purple); }
+.page-legend__list li:nth-child(3) { --legend-color: var(--logo-red); }
 
 .page-legend__link {
   display: block;
