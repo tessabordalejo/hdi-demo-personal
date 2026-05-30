@@ -1627,10 +1627,24 @@ p:last-child {
     gap: 2.25rem;
   }
 
+  /* SSHRC mark is allowed to scale down to fit the viewport */
   .funder-logo__img {
     height: auto;
     width: 100%;
     max-width: 320px;
+  }
+
+  /* Alliance brand rule: keep the logo at the 50px digital minimum.
+     It is wide (~8:1), so let it scroll horizontally within its box
+     instead of shrinking below the minimum height. */
+  .funder-logo {
+    overflow-x: auto;
+  }
+
+  .funder-logo__img--alliance {
+    height: 50px;
+    width: auto;
+    max-width: none;
   }
 
   .nav__logo {
