@@ -1502,6 +1502,7 @@ p:last-child {
 .footer__copy {
   font-family: var(--font-ui);
   font-size: var(--small-size);
+  margin: 0;
 }
 
 .footer__brand {
