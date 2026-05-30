@@ -2022,13 +2022,26 @@ p:last-child {
   margin: 0 0 0.3rem;
 }
 
+.member__name,
+.member__note {
+  /* Override the global justified <p> so member text stays centered */
+  text-align: center;
+}
+
 .member__role {
   font-family: var(--font-ui);
   font-size: var(--label-size);
+  line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--logo-teal);
   margin: 0;
+  /* text-align:center overrides the global justified <p> rule, which
+     otherwise spreads a multi-word role line edge-to-edge.
+     max-width keeps longer roles wrapping tidily under the photo. */
+  text-align: center;
+  max-width: 13em;
+  text-wrap: balance;
 }
 
 .member__note {
