@@ -3,7 +3,7 @@ layout: post
 title: "Humanities Data Inquiry: Exploring Data Issues in the Humanities and Cultural Heritage (Information Sheet)"
 date: 2022-05-01 12:00:00 +0000
 category: "Other"
-authors: "Nathan D. Woods"
+authors: "Nathan Woods"
 external_url: "https://zenodo.org/records/6547505"
 ---
 

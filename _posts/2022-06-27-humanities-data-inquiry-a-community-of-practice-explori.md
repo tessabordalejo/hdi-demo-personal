@@ -3,7 +3,7 @@ layout: post
 title: "Humanities Data Inquiry: A Community of Practice Exploring Data Issues in the Humanities and Heritage Research"
 date: 2022-06-27 12:00:00 +0000
 category: "Other"
-authors: "Woods, Nathan D.; Bordalejo, Barbara; O'Donnell, Daniel"
+authors: "Nathan Woods; Barbara Bordalejo; Daniel O'Donnell"
 external_url: "https://zenodo.org/records/6762201"
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Mapping the Humanities Data Ecosystem"
 date: 2024-07-09 12:00:00 +0000
 category: "Presentation"
-authors: "Nathan D., Woods"
+authors: "Nathan Woods"
 external_url: "https://zenodo.org/records/20173796"
 ---
 

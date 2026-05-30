@@ -3,7 +3,7 @@ layout: post
 title: "Good Things Come in Small Packages: Community of Practice Development Proposal and Overview"
 date: 2021-11-23 12:00:00 +0000
 category: "Presentation"
-authors: "Woods, Nathan"
+authors: "Nathan Woods"
 external_url: "https://zenodo.org/records/5735419"
 ---
 

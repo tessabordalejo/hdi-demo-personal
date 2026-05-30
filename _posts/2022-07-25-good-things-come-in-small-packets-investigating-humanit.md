@@ -3,7 +3,7 @@ layout: post
 title: "\"Good things come in small packets\": Investigating Humanities Research Data Practices: A Community of Practice Approach"
 date: 2022-07-25 12:00:00 +0000
 category: "Presentation"
-authors: "O'Donnell, Daniel Paul"
+authors: "Daniel O'Donnell"
 external_url: "https://zenodo.org/records/6902822"
 ---
 
