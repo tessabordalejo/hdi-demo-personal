@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Editing Texts in Multiple Versions (Peter Robinson) May 11, 2022"
+title: "Editing Texts in Multiple Versions"
 date: 2022-06-27 12:00:00 +0000
 category: "Video/Audio"
 authors: "Peter Robinson"

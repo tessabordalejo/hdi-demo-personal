@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "The creative, collaborative lab. A round table (June 01, 2022. 1400-1600 UTC)"
+title: "The Creative, Collaborative Lab: A Round Table"
 date: 2022-06-27 12:00:00 +0000
 category: "Video/Audio"
-authors: "Louise Barrett; Jamal Mansour; Locke Spencer; Robert Sutherland; Daniel O'Donnell"
+authors: "Louise Barrett, Jamal Mansour, Locke Spencer, Robert Sutherland, Daniel O'Donnell"
 external_url: "https://zenodo.org/records/6762819"
 ---
 
