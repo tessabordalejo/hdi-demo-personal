@@ -1603,26 +1603,6 @@ p:last-child {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-
-  /* Stack the research grid (was text + fixed 400px image) */
-  .research-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
-  .research-grid img {
-    height: 280px;
-  }
-
-  /* Stack the research banner's two panels */
-  .research-banner {
-    grid-template-columns: 1fr;
-  }
-
-  .research-banner__left {
-    border-right: none;
-    border-bottom: 1px solid #bedee2;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1876,6 +1856,30 @@ p:last-child {
 
 .research-banner__list li:last-child {
   border-bottom: none;
+}
+
+/* Mobile: stack the research grid and banner. Placed after the base
+   rules above so it actually overrides them. */
+@media (max-width: 900px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Image on top, text below, each full width */
+  .research-grid img {
+    order: -1;
+    height: 280px;
+  }
+
+  .research-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .research-banner__left {
+    border-right: none;
+    border-bottom: 1px solid #bedee2;
+  }
 }
 
 /* ============================================================
