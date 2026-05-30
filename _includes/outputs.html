@@ -62,9 +62,20 @@
     var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
     var perPage = 6;
     var pages = Math.ceil(cards.length / perPage);
-    if (pages <= 1) { pager.style.display = 'none'; return; }
-
     var current = 1;
+
+    // Size every card to the tallest one so they match across all pages
+    // without clipping any titles.
+    function equalize() {
+      grid.style.gridAutoRows = 'auto';
+      cards.forEach(function (card) { card.style.display = ''; });
+      var max = 0;
+      cards.forEach(function (card) {
+        if (card.offsetHeight > max) max = card.offsetHeight;
+      });
+      if (max) grid.style.gridAutoRows = max + 'px';
+      show(current);
+    }
 
     function show(page) {
       current = page;
@@ -90,6 +101,7 @@
     }
 
     function render() {
+      if (pages <= 1) { pager.style.display = 'none'; return; }
       pager.innerHTML = '';
       pager.appendChild(makeButton('‹', current - 1, current === 1, false));
       for (var i = 1; i <= pages; i++) {
@@ -98,6 +110,16 @@
       pager.appendChild(makeButton('›', current + 1, current === pages, false));
     }
 
-    show(1);
+    equalize();
+
+    // Re-measure after web fonts load and on resize (widths change line counts)
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(equalize);
+    }
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(equalize, 200);
+    });
   });
 </script>
